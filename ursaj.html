@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ursa J | Fakebook</title>
+    <link rel="stylesheet" href="stili.css">
+</head>
+<body>
+    <header>
+        <h1 class="headline">FAKEBOOK</h1>
+    Search: <input type="search" placeholder="Search by name">
+    </header>
+    <main>
+        <h2 class="username">Ursa J</h2>
+        <img src="https://scontent.flju1-1.fna.fbcdn.net/v/t39.30808-6/220266425_1556369708047037_8362429745541239965_n.jpg?_nc_cat=108&ccb=1-7&_nc_sid=e3f864&_nc_ohc=NRRMSB1Gpi4AX8ThGbJ&_nc_ht=scontent.flju1-1.fna&oh=00_AfAFd47APoCcNe9V_AFlPE-0HRMSq0SmfSpU15BMYE4pIg&oe=64235B1D" 
+        alt="Profile photo"> 
+        <br>
+        <input type="button" onclick="alert('Hello Friend!')" value="Add a friend"> <input type="button" onclick="alert('Whats up?')" value="Send a message">
+        <br>
+        <h4>Basic informations:</h4>
+        <ul>
+            <li>
+                <strong>School:</strong> SmartNinja school- 
+                <a href="https://smartninja.si/" target="_blank">
+                    more info 
+                </a>
+            </li>
+            <li>
+                <strong>Country:</strong> Slovenia
+            </li>
+            <li>
+                <strong>Hobbies:</strong> Traveling, cooking
+            </li>
+        </ul>
+        <br>
+        <fieldset>
+            <p><strong>Let's go on an adventure together!</strong>
+                <br>Fill out the questionnaire below.
+            </p>
+        <form>
+            <p>Your name:</p>
+            <input type="text" placeholder="Enter your name" required><br>
+            <br>
+            <p class="normal-text"><u>WHERE WOULD YOU LIKE TO TRAVEL?</u></p>
+            <input type="checkbox" id="continent1" name="continent1" value="Europe">
+            <label for="continent1">Europe</label>
+            <input type="checkbox" id="continent2" name="continent2" value="North America">
+            <label for="continent2">North America</label>
+            <input type="checkbox" id="continent3" name="continent3" value="South America">
+            <label for="continent3">South America</label><br>
+            <input type="checkbox" id="continent4" name="continent4" value="Asia">
+            <label for="continent4">Asia</label>
+            <input type="checkbox" id="continent5" name="continent5" value="Africa">
+            <label for="continent5">Africa</label>
+            <input type="checkbox" id="continent6" name="continent6" value="Australia">
+            <label for="continent6">Australia</label>
+            <input type="checkbox" id="continent7" name="continent7" value="Antarctica">
+            <label for="continent7">Antarctica</label><br>
+        <br>
+            <p class="normal-text"><u>WHAT'S YOUR FAVORITE DESTINATION?</u></p>
+            <select>
+            <option value="Mountains">Mountains</option>
+            <option value="Beaches">Beaches</option>
+            <option value="Cities">Cities</option>
+            <option value="The Countryside">The Countryside</option>
+            </select>
+        <br>
+            <p class="normal-text"><u>PICK YOUR FAVORITE WAY TO TRAVEL:</u></p>
+            <style>
+                input[type="radio"] {
+                    accent-color: blue;
+                }
+                </style>
+            <input type="radio" id="car" name="fav_language" value="car">
+            <label for="car">By Car</label>
+            <br>
+            <input type="radio" id="train" name="fav_language" value="train">
+            <label for="train">By Train</label>
+            <br>
+            <input type="radio" id="plane" name="fav_language" value="plane">
+            <label for="plane">By Plane</label>
+            <br>
+            <input type="radio" id="ship" name="fav_language" value="ship">
+            <label for="ship">By Ship</label>
+            <br>
+            <br>
+            <input type="submit" value="Send a travel request" onclick="alert('Request send!')">
+        </form>
+    </fieldset>
+    </main>
+    <br>
+    <footer>
+        <p id="comments">Comment my Fakebook Profile</p>
+        <textarea name="Comment my Fakebook Profile"></textarea>
+        <input type="submit" value="Send" onclick="alert('Thanks for your comment')">
+        <p>&copy; Ursa J - March, 2023</p>
+    </footer>
+</body>
+</html>
